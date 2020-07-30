@@ -1,0 +1,20 @@
+dependencies {
+    println("Getting common dependencies...")
+    //  Java 11 lacking dependencies
+    implementation group: 'com.sun.activation', name: 'javax.activation', version : '1.2.0'
+    implementation group: 'jakarta.xml.bind', name: 'jakarta.xml.bind-api', version: '2.3.2'
+    //  Camel
+    implementation group: 'org.apache.camel', name: 'camel-core-starter', version: '3.0.0-M4'
+    implementation group: 'org.apache.camel', name: 'camel-spring-boot-starter', version: '3.0.0-M4'
+    implementation group: 'org.apache.camel', name: 'camel-jackson-starter', version: '3.0.0-M4'
+    implementation group: 'org.apache.camel', name: 'camel-servlet-starter', version: '3.0.0-M4'
+    implementation group: 'org.apache.camel', name: 'camel-swagger-java-starter', version: '3.0.0-M4'
+    //  Jackson
+    implementation group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-cbor', version: '2.10.3'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.10.3'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.10.3'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.10.3'
+    //  Spring Boot
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.1.1.RELEASE'
+    println("Getting common dependencies successful")
+}
